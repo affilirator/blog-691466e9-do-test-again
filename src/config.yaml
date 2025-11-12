@@ -1,0 +1,62 @@
+
+site:
+  name: 'do test again'
+  site: 'https://affilirator.github.io/blog-691466e9-do-test-again/'
+  base: '/blog-691466e9-do-test-again/'
+  trailingSlash: false
+  googleSiteVerificationId: false
+
+metadata:
+  title:
+    default: 'do test again'
+    template: '%s — do test again'
+  description: 'A blog built with AstroWind template and Payload CMS'
+  robots:
+    index: true
+    follow: true
+  openGraph:
+    site_name: 'do test again'
+    images:
+      - url: '~/assets/images/default.png'
+        width: 1200
+        height: 628
+    type: website
+
+i18n:
+  language: en
+  textDirection: ltr
+
+apps:
+  blog:
+    isEnabled: true
+    postsPerPage: 6
+    post:
+      isEnabled: true
+      permalink: '/blog/%slug%'
+      robots:
+        index: true
+    list:
+      isEnabled: true
+      pathname: 'blog'
+      robots:
+        index: true
+    category:
+      isEnabled: true
+      pathname: 'category'
+      robots:
+        index: true
+    tag:
+      isEnabled: true
+      pathname: 'tag'
+      robots:
+        index: false
+    isRelatedPostsEnabled: true
+    relatedPostsCount: 4
+
+analytics:
+  vendors:
+    googleAnalytics:
+      id: null
+
+ui:
+  theme: 'system'
